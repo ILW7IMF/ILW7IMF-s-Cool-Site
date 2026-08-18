@@ -1,0 +1,15 @@
+.box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.box img {
+  max-height: 96px;
+  width: auto;
+}
+
+.text {
+  font-family: 'chaotixNova';
+}

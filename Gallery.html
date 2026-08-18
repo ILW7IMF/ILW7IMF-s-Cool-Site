@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+<link rel="icon" href="icon.gif" type="image/gif">
+    <style>
+        body {
+            background-color: #000000;
+            background-image: url('Img/patterngallery.png');
+            background-repeat: repeat;
+            background-size: auto;
+            color: #ff7f27;
+        }
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px);
+{
+</style>
+ <div class="lines"></div>
+    </style>
+
+    <link rel="stylesheet" href="Font_SCD/SCD.css">
+    <link rel="stylesheet" href="Font_chaotix/chaotixnova.css">
+		<link rel="stylesheet" href="Font_DELTARUNE/DR.css">
+				<link rel="stylesheet" href="miscCSS/textbutton.css">
+</head>
+<body>
+	<p style="font-family: 'chaotixNova';">
+    Welcome to the Gallery! This is where i put my sprites,non-sprite art, etc
+    <span style="font-family: 'chaotixNova';">
+        <a href="Egg.html">.</a>
+    </span>
+</p>
+</p>
+<p style="font-family: 'SCD';">
+<p style="font-family: 'SCD';">
+    This website contains autoplay music. If it isn't playing,
+    <span style="font-family: 'chaotixNova';">
+        <a href="Gallery.html">click here.</a>
+    </span>
+<a href="index.html">Main Page</a> 
+</p>
+<audio autoplay loop> <!--audio system start -->
+    <source src="mus/GALLERY from Sonic generations.mp3" type="audio/mpeg">
+</audio> <!--audio system end -->
+<!--son2 expandf-->
+<a href="spritesheets/son2 expandf.png" target="_blank">
+  <img src="spritesheets/son2 expandf.png" width="250">
+</a>
+<p style="font-family: 'SCD';">
+The Ultimate(?)Sonic 2 Sheet
+</p>
+<!--son2 expandf-->
+<!--Tornado-->
+<a href="spritesheets/Tornado.png" target="_blank">
+  <img src="spritesheets/Tornado.png" width="150">
+</a>
+<p style="font-family: 'SCD';">
+The Tornado
+</p>
+<!--Tornado-->
+<!--Vessel-->
+<a href="spritesheets/vessel deltarune.png" target="_blank">
+  <img src="spritesheets/vessel deltarune.png" width="150">
+</a>
+<p style="font-family: 'SCD';">
+Some Vessel Sprites I Made.
+</p>
+<!--Vessel-->
+
+<p style="font-family: 'DR';">
+Song - GALLERY from Sonic Generations
+</p>
+
+</body>
+</html>
+<!-- <a href="Tailplane.html">Little Thing i made in Scratch (music by dvl37)</a> -->

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blueshift</title>
+<link rel="icon" href="icon.gif" type="image/gif">
+    <style>
+        body {
+            background-color: #000000;
+            background-image: url('Img/patternchar.png');
+            background-repeat: repeat;
+            background-size: auto;
+            color: #ff7f27;
+        }
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px);
+{
+}
+/*
+Source - https://stackoverflow.com/a/39295746
+Posted by Laura, modified by community. See post 'Timeline' for change history
+Retrieved 2026-07-05, License - CC BY-SA 3.0
+*/
+
+* {
+cursor: url("Img/cursor/cur_00000.png"), auto;
+-webkit-animation: cursor 400ms infinite;
+animation: cursor 400ms infinite;
+}
+
+@-webkit-keyframes cursor {
+  0%   { cursor: url("Img/cursor/cur_00000.png"), auto; }
+  20%  { cursor: url("Img/cursor/cur_00001.png"), auto; }
+  40%  { cursor: url("Img/cursor/cur_00002.png"), auto; }
+  60%  { cursor: url("Img/cursor/cur_00000.png"), auto; }
+  80%  { cursor: url("Img/cursor/cur_00001.png"), auto; }
+  100% { cursor: url("Img/cursor/cur_00002.png"), auto; }
+}
+
+@keyframes cursor {
+  0%   { cursor: url("Img/cursor/cur_00000.png"), auto; }
+  20%  { cursor: url("Img/cursor/cur_00001.png"), auto; }
+  40%  { cursor: url("Img/cursor/cur_00002.png"), auto; }
+  60%  { cursor: url("Img/cursor/cur_00000.png"), auto; }
+  80%  { cursor: url("Img/cursor/cur_00001.png"), auto; }
+  100% { cursor: url("Img/cursor/cur_00002.png"), auto; }
+}
+{
+    font-family: 'SCD';
+    text-shadow: 2px 2px 0 #000000;
+}
+
+.chaotix {
+    font-family: 'chaotixNova';
+    text-shadow: 2px 2px 0 #000000;
+}
+.dr {
+    font-family: 'DR';
+    text-shadow: 2px 2px 0 #000000;
+}
+
+</style>
+ <div class="lines"></div>
+    </style>
+
+    <link rel="stylesheet" href="Font_SCD/SCD.css">
+    <link rel="stylesheet" href="Font_chaotix/chaotixnova.css">
+		<link rel="stylesheet" href="Font_DELTARUNE/DR.css">
+	<link rel="stylesheet" href="miscCSS/box.css">
+<body>
+<p class="chaotix">
+Characters/OCs
+</p>
+<div class="box">
+  <img src="Img/blue2.gif" alt="Blueshift">
+  <div class="text">
+    <h3>Blueshift</h3>
+    <p>
+        It's only me! Heh...
+    </p>
+  </div>
+</div>
+
+<div class="box">
+  <img src="Img/miles.png" alt="Miles 'Tails' Prower">
+  <div class="text">
+    <h3>Miles</h3>
+    <p>
+        Alex Wilson ; With the vessel of Miles " Tails " Prower is My newest pawn . He is always optimistic and thinks he can get out of here . How hilarious ! wouldn' t you agree ?
+    </p>
+  </div>
+</div>
+ <div class="box">
+  <img src="Img/sonic.gif" alt="Sonic the Hedgehog">
+  <div class="text">
+    <h3>Sonic</h3>
+    <p>
+        Scott Garcia has been gifted with the vessel of Sonic . He is My favorite pawn ; He thinks he can break the rules i make ! Pathetic , but interesting.
+    </p>
+  </div>
+</div>
+ <div class="box">
+  <img src="Img/Egg.gif" alt="Dr. Ivo Robotnik">
+  <div class="text">
+    <h3>Eggman</h3>
+    <p>
+        Anthony Rivera ; inhabiting the vessel of Doctor Robotnik , moreso known as " Eggman " is an idiot . He has never outsmarted me . Never . I Would never lie to you . 
+    </p>
+  </div>
+</div>
+<!--audio system start -->
+<audio autoplay loop>
+    <source src="mus/File_Select.wav" type="audio/wav">
+</audio>
+<p style="font-family: 'DR'; color:#FCFC00; text-shadow: 2px 2px 0 #000000;">
+  Music name - File Select from Sonic The Hedgehog 3
+</p>
+<!--audio system end -->
+<p style="font-family: 'SCD';">
+<a href="index.html">go back</a> 
+</p>
+<p style="font-family: 'SCD';">
+<a href="bluecreds.html">CREDITS</a> 
+</p>
+</body>
+<!--char template-->
+<!-- <div class="box">
+  <img src="Img/PLACEHOLDER.png" alt="PLACEHOLDER">
+  <div class="text">
+    <h3>PLACEHOLDER</h3>
+    <p>
+        This is the template for a character Bio
+    </p>
+  </div>
+</div>                                                                                                  -->

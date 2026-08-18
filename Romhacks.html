@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sonic 1 Hachi Framework</title>
+<link rel="icon" href="icon.gif" type="image/gif">
+	<link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/window.css">
+<link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/textbox.css">
+    <style>
+        body {
+            background-color: #000000;
+            background-image: url('Img/patternmain.png');
+            background-repeat: repeat;
+            background-size: auto;
+            color: #FCFC00;
+       }
+	   a {
+  color: #fcb000;
+}
+
+a:visited {
+  color: #3c4eb5;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: purple;
+}
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 90%;
+    }
+}
+summary {
+  font-family: 'chaotixNova';
+  text-shadow: 2px 2px 0 #000000;
+  cursor: pointer;
+}
+details summary {
+    font-family: 'chaotixNova';
+    text-shadow: 2px 2px 0 #000000;
+    cursor: pointer;
+}
+.scd {
+    font-family: 'SCD';
+    text-shadow: 2px 2px 0 #000000;
+}
+
+.chaotix {
+    font-family: 'chaotixNova';
+    text-shadow: 2px 2px 0 #000000;
+}
+</style>
+
+    <link rel="stylesheet" href="Font_SCD/SCD.css">
+    <link rel="stylesheet" href="Font_chaotix/chaotixnova.css">
+	<link rel="stylesheet" href="Font_DELTARUNE/DR.css">
+</head>
+<body>
+ <div class="lines"></div>
+<p class="scd">
+Here you can find my rom hacks! you can download them, play them online, or even get the source code for some of them! 
+</p>
+<p class="chaotix">
+An Untitled sonic 2 hack 
+</p>
+<p class="scd">
+My first rom hack, a hack of Sonic 2 made with Esrael Sonic Editor II, Emerald hill is the only changed zone to my knowledge.
+</p>
+<p class="scd"> 
+<a href="rom/g0041_fixedchk.bin" download>Download</a>
+</p>
+<p class="scd">
+        <a href="rom/g0041.html">Play it online!</a>
+</p>
+
+<p class="chaotix"> <!--rom info start-->
+SONIC 1 OVERDRIVE
+</p>
+<p class="scd">
+A now partly scrapped hack due to the disassembly being very outdated and cumbersome to adapt to newer guides. It will be remade, with a
+    <span style="font-family: 'SCD'; text-shadow: 2px 2px 0 #000000;">
+        <a href="HACHI.html">newer disassembly.</a>
+    </span> 
+</p>
+<p class="scd"> 
+<a href="rom/S1O_fixedchk.bin" download>Download</a>
+</p>
+<p class="scd">
+        <a href="rom/S1O.html">Play it online!</a>
+<details>
+  <summary>Original README.txt (Warning, very big)</summary>
+  <pre class="scd">
+GM 00000000-04 
+Sonic 1  オーバードライブ
+Sonic 1 Overdrive
+=========================================
+NOTES:
+- Checkpoint monitor does nothing for now.
+=========================================
+KNOWN BUGS:
+-If there's too many objects in an area, the YM612 will hang a little, and some tiles may become corrupted. This is probably due to lack of free RAM, since it is less prominent with the dma queue
+-LZ can sometimes make animals/explosions sometimes load incorrect mappings, unknown why.
+=========================================
+CREDITS:
+SEGA - Sonic
+Sonic Team - The game
+ILW7IMF - Hack name, Layouts, art, pallates (excluding MZ),
+Letonics - life icon, ghz layout inspo, MZ pallate, sonic underwater pallate fix
+LuigiXHero, Gamma V, Dark Shamil Khan - SMPS
+Nineko - Working eggman monitor, SMPS
+Selbi -Spindash, Extended camera, Title screen art seperation,Extended Title cards,Useing different assets per act in Sonic 1, Optimized Shield & Invincibility Art, no roll jump lock
+Selbi,RobiWanKenobi,SameytheHedgie,MDTravis,Cinossu -Extended Title cards
+Inferno - Air roll
+Vladikcomper - Error handler & debugger
+Snkenjoi - Flex 2
+Flamewing - UltraDMAQueue
+Pluto - Sega sound fix
+Crash - PAL music fix 
+Quickman - Hud blink fix
+Devon/ ArtmeierCompanies - Improving CalcAngle subroutines
+=========================================
+TOOLS & RESOURCES:
+SonLVL, SonPLN- MainMemory
+Original dissasembly - github.com/sonicretro/s1disasm
+SCHG - info.sonicretro.org/SCHG_How-to:Guide#Sonic_1
+SSRG - sonicresearch.org
+Flex 2 - github.com/kirjavascript/Flex2/releases
+SMPS2ASM -Natsumi
+=========================================
+GUIDES USED:
+Eggman monitor-  info.sonicretro.org/SCHG_How-to:Have_a_functional_Eggman_monitor_in_Sonic_1
+Spindash             -  info.sonicretro.org/SCHG_How-to:Add_Spin_Dash_to_Sonic_1_(Rewrite)
+Extended camera - info.sonicretro.org/SCHG_How-to:Add_Extended_Camera_to_Sonic_1
+Title Art Seperate - info.sonicretro.org/SCHG_How-to:Separate_title_art_from_GHZ/make_GHZ_load_alternate_art#Separate_title_screen_art
+Ext. Title cards      - info.sonicretro.org/SCHG_How-to:Extend_Title_Cards_in_Sonic_1
+Diff. assets per act - info.sonicretro.org/SCHG_How-to:Use_Dynamic_Tilesets_in_Sonic_1#Expand_level_headers
+Shield & invinc     - info.sonicretro.org/SCHG_How-to:Optimize_Shield_and_Invincibility_Art
+Air roll                - info.sonicretro.org/SCHG_How-to:Add_the_Air_Roll/Flying_Spin_Attack  ( slightly edited ver.)
+Remove roll jump lock - no roll jump lock
+Debugger   - sonicresearch.org/community/index.php?threads/md-debugger-and-error-handler-v-2-6-update.4442/
+Dma Queue    - info.sonicretro.org/SCHG_How-to:Add_Flamewing%27s_UltraDMAQueue_to_Sonic_1
+Sega SFX Fix    - info.sonicretro.org/SCHG_How-to:Fix_the_SEGA_Sound
+Pal Music fix- info.sonicretro.org/SCHG_How-to:Correct_Sonic_1_PAL_Music_Tempo
+Pal music fix, Alt link - sonicresearch.org/community/index.php?threads/correcting-sonic-1-pal-music-tempo.2603/
+Hud blink fix - info.sonicretro.org/SCHG_How-to:Fix_the_HUD_blinking
+calcangle improvements - https://info.sonicretro.org/SCHG_How-to:Improving_CalcAngle_subroutines
+  </pre>
+</details>
+
+</p> <!--rom info end-->
+<!--audio system start -->
+<audio autoplay loop>
+    <source src="mus/Local Forecast .mp3" type="audio/mpeg">
+</audio>
+<p style="font-family: 'DR'; color:#FCFC00; text-shadow: 2px 2px 0 #000000;">
+  Song - Local Forecast - Kevin MacLeod
+</p>
+<!--audio system end -->
+
+
+<!--Rom info template <p class="chaotix">
+Romname
+</p>
+<p class="scd">
+info
+</p>
+<p class="scd"> 
+<a href="rom/rom.bin" download>Download</a>
+</p>
+<p class="scd">
+        <a href="rom/rom.html">Play it online!</a>
+</p>

@@ -1,0 +1,11 @@
+"You did it."
+ "You have saved them..." 
+"Congratulations." 
+"It seems this orchard has been picked clean." 
+"Oh well, there are always other trees."
+ *snaps fingers, a warp ring appears and green hill is visible through it*
+ "Other worlds..." 
+*starts walking to the warp ring, but turns around* 
+"Goodbye, friend."
+ *turns back to the warp ring, and continues walking as the screen fades to white*
+ *game closes*

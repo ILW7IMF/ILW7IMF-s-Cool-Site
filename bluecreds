@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credits for stuff on the Blueshift page</title>
+<link rel="icon" href="icon.gif" type="image/gif">
+	<link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/window.css">
+<link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/textbox.css">
+    <style>
+        body {
+            background-color: #000000;
+            background-image: url('Img/patternmain.png');
+            background-repeat: repeat;
+            background-size: auto;
+            color: #FCFC00;
+       }
+
+<p style="font-family: 'SCD'; text-shadow: 2px 2px 0 #000000;">
+<a href="Characters.html">Who and what is Blueshift</a> 
+</p>
+<audio autoplay loop> <!--audio system start -->
+    <source src="mus/Sheep_Raider_OST_Track_7.mp3" type="audio/mpeg">
+</audio> <!--audio system end -->
+<ul style="font-family: 'SCD'; color:#FCFC00; text-shadow: 2px 2px 0 #000000;">
+  <li>Sonic/Scott sprite on the Blueshift page: original sprite by rosabelle, edited by ILW7IMF</a></li>
+</ul>
+<p style="font-family: 'DR'; color:#FCFC00; text-shadow: 2px 2px 0 #000000;">
+  Song - Sheep Raider - Track 7
+</p>
+
+</body>
+</html>

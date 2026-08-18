@@ -1,0 +1,15 @@
+.textButton {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'chaotixNova';
+    font-size: inherit;
+    color: #fcfc00;
+    cursor: pointer;
+}
+
+.textButton:hover {
+    color: yellow;
+}

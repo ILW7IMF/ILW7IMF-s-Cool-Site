@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+
+#error {
+    font-family: "SCD", sans-serif;
+    font-size: 18px;
+    font-weight: light;
+    margin: 0;
+}
+    </style>
+
+    <link rel="stylesheet" href="Font_chaotix/chaotixnova.css">
+	    <link rel="stylesheet" href="Font_SCD/SCD.css">
+</head>
+
+<body>
+
+<h1 id="404"></h1>
+
+<p style="font-family: 'chaotixNova';">
+    <a href="index.html">Go home.</a>
+</p>
+
+<script>
+const messages = [
+    "the page you were looking for isn't here : (",
+    "It seems this orchard has been picked clean .",
+    "I Hate it when people call me ' The Big Blue ™ ' like tf you mean ' The Big Blue ™ ' ? ? ? ? ? ? ? ?",
+    "My blues ? shifted . My Alex ? Dead . This page ? Nonexistent . Yeah , i' m thinkin' i' m Blueshift",
+    "Monochrome.",
+    "Ts pmo sm ong vroski",
+    "I' m shifting it ! I' m shifting it so gooooooodddd ."
+];
+
+const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+document.getElementById("404").textContent = randomMessage;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ILW7IMF's Cool Site</title>
+<link rel="icon" href="icon.gif" type="image/gif">
+	<link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/window.css">
+<link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/textbox.css">
+    <style>
+        body {
+            background-color: #000000;
+            background-image: url('Img/patternmain.png');
+            background-repeat: repeat;
+            background-size: auto;
+            color: #FCFC00;
+       }
+	   a {
+  color: #fcb000;
+}
+
+a:visited {
+  color: #3c4eb5;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: purple;
+}
+.lines {
+position: fixed;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+pointer-events: none;
+z-index: 300;
+opacity: 0.05;
+}
+ 
+.lines:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+pointer-events: none;
+background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+background-size: 100% 4px;
+will-change: background, background-size; animation: scanlines 0.2s linear infinite;
+}
+ 
+@keyframes scanlines {
+from {
+background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
+to {
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+background-size: 100% 4px;
+}
+}
+@media only screen and (max-width: 600px) {
+}
+.scd {
+    font-family: 'SCD';
+    text-shadow: 2px 2px 0 #000000;
+}
+
+.chaotix {
+    font-family: 'chaotixNova';
+    text-shadow: 2px 2px 0 #000000;
+}
+.dr {
+    font-family: 'DR';
+    text-shadow: 2px 2px 0 #000000;
+}
+</style>
+
+    <link rel="stylesheet" href="Font_SCD/SCD.css">
+    <link rel="stylesheet" href="Font_chaotix/chaotixnova.css">
+	<link rel="stylesheet" href="Font_DELTARUNE/DR.css">
+</head>
+<body>
+ <div class="lines"></div>
+<div class="background">
+  <div class="window glass active" style="max-width: 35%; --w7-w-bg: #5749a4;">
+    <div class="title-bar">
+      <div class="title-bar-text">ILW7IMF</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body has-space">
+<p style="color:#000000;">
+  Welcome! I am ILOVEWIN7ITSMYFAV, a spriter who likes Sonic and DELTARUNE.
+</p>
+    </div>
+  </div>
+</div>
+<p class="scd">
+    This website contains autoplay music. If it isn't playing,
+    <span class="chaotix">
+        <a href="index.html">click here.</a>
+    </span>
+</p>
+<p class="scd">
+<a href="Gallery.html">Gallery</a> 
+</p>
+<p class="scd">
+<a href="Characters.html">Who and what is Blueshift</a> 
+</p>
+<p class="scd">
+<a href="HACHI.html">Sonic Hachi? Never heard of 'er!</a> 
+</p>
+
+<p class="scd">
+<a href="Romhacks.html">Rom hacks</a> 
+</p>
+<ul class="scd">
+  <li><a href="https://www.deviantart.com/ilovewin7itsmyfav">D.A.</a></li>
+  <li><a href="https://ILW7IMFs-Cool-Site.neocities.org">My Site (You are here)</a></li> 
+  <li><a href="https://sonicresearch.org/community/index.php?members/ilw7imf.14941/">SSRG</a></li>
+    <li><a href="https://www.youtube.com/@ILW7IMF">Youtube</a></li>
+  <li><a href="https://github.com/ILW7IMF">GitHub</a></li>
+      <li><a href="https://continued-exe.fandom.com/wiki/User:ILW7IMF">Fandom (Continued EXE wiki)</a></li>
+</ul>
+<p class="scd">
+Site button
+<a href="https://yoursite.neocities.org/">
+    <img src="Img/bannercoolilw7imf.gif" alt="My Site">
+</a>
+
+<p style="font-family: 'SCD'; color:#FCFC00; text-shadow: 2px 2px 0 #000000;">
+Code:</p>
+
+<div class="group" style="width: 200px">
+<textarea>
+<a href="https://ILW7IMFs-Cool-Site.neocities.org/">
+<img src="https://ILW7IMFs-Cool-Site.neocities.org/Img/bannercoolilw7imf.gif" alt="My Site">
+</a>
+</textarea>
+</div>
+<audio autoplay loop> <!--audio system start -->
+    <source src="mus/Sheep_Raider_OST_Track_7.mp3" type="audio/mpeg">
+</audio>
+<p style="font-family: 'DR'; color:#FCFC00; text-shadow: 2px 2px 0 #000000;">
+  Song - Sheep Raider - Track 7
+</p>  <!--audio system end -->
+
+</body>
+</html>
