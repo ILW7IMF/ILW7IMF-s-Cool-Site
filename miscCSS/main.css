@@ -1,9 +1,7 @@
-        body {
-            background-color: #000000;
-            background-image: url('Img/patternmain.png');
-            background-repeat: repeat;
-            background-size: auto;
-            color: #FCFC00;
+body {
+    background-image: url('https://ilw7imf.github.io/ILW7IMF-s-Cool-Site/Img/patternmain.png');
+    background-repeat: repeat;
+    color: #FCFC00;
        }
 	   a {
   color: #fcb000;
