@@ -12,47 +12,6 @@
             background-size: auto;
             color: #ff7f27;
         }
-.lines {
-position: fixed;
-left: 0;
-top: 0;
-width: 100vw;
-height: 100vh;
-pointer-events: none;
-z-index: 300;
-opacity: 0.05;
-}
- 
-.lines:before {
-content: '';
-position: absolute;
-left: 0;
-top: 0;
-right: 0;
-bottom: 0;
-pointer-events: none;
-background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
-background-size: 100% 4px;
-will-change: background, background-size; animation: scanlines 0.2s linear infinite;
-}
- 
-@keyframes scanlines {
-from {
-background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, .5) 51%); background-size: 100% 4px; }
-to {
-background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
-background-size: 100% 4px;
-}
-}
-@media only screen and (max-width: 600px);
-{
-}
-/*
-Source - https://stackoverflow.com/a/39295746
-Posted by Laura, modified by community. See post 'Timeline' for change history
-Retrieved 2026-07-05, License - CC BY-SA 3.0
-*/
-
 * {
 cursor: url("Img/cursor/cur_00000.png"), auto;
 -webkit-animation: cursor 400ms infinite;
@@ -91,7 +50,6 @@ animation: cursor 400ms infinite;
 }
 
 </style>
- <div class="lines"></div>
     </style>
 
     <link rel="stylesheet" href="Font_SCD/SCD.css">
