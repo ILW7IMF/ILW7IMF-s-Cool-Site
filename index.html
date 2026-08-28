@@ -46,12 +46,26 @@
 
     </div>
 
-    <p class="scd">
-        This website contains autoplay music. If it isn't playing,
-        <span class="chaotix">
-            <a href="index.html">click here.</a>
-        </span>
-    </p>
+<p class="scd">
+    This website contains autoplay music. If it isn't playing,
+    <span class="chaotix">
+        <a href="#" id="playMusic">click here.</a>
+    </span>
+</p>
+
+<audio id="bgMusic" autoplay loop>
+    <source src="mus/Sheep_Raider_OST_Track_7.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("bgMusic");
+const playButton = document.getElementById("playMusic");
+
+playButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    music.play();
+});
+</script>
 
     <p class="scd">
         <a href="Gallery.html">Gallery</a>
@@ -134,10 +148,6 @@
 </a>
         </textarea>
     </div>
-
-    <audio autoplay loop>
-        <source src="mus/Sheep_Raider_OST_Track_7.mp3" type="audio/mpeg">
-    </audio>
 
     <p style="font-family: DR; color: #fcfc00; text-shadow: 2px 2px 0 #000">
         Song - Sheep Raider - Track 7
